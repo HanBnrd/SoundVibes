@@ -1,0 +1,37 @@
+{
+
+  "description": "Music player in the sidebar of your browser",
+  "manifest_version": 2,
+  "name": "SoundVibes",
+  "version": "0.1",
+  "homepage_url": "https://github.com/HanBnrd/SoundVibes",
+  "icons": {
+    "96": "icons/whatshot_96.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {"96": "icons/whatshot_96.png"},
+    "theme_icons": [{
+        "light": "icons/whatshot_light_96.png",
+        "dark": "icons/whatshot_96.png",
+        "size": 96
+    }],
+    "default_title": "SoundVibes"
+  },
+
+  "sidebar_action": {
+    "default_icon": "icons/whatshot_96.png",
+    "default_title" : "SoundVibes",
+    "default_panel": "sidebar/panel.html"
+  }
+
+}
